@@ -1,10 +1,10 @@
 import { Tabs } from "expo-router";
 
-import { TabBar } from "@/components/TabBar";
+import { TabBar } from "@/components/tab-bar/tab-bar";
 
 export default function TabLayout() {
   return (
-    <Tabs tabBar={(props) => <TabBar {...props} />}>
+    <Tabs tabBar={() => <TabBar />}>
       <Tabs.Screen
         name="index"
         options={{
